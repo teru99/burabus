@@ -186,13 +186,11 @@
             if (stopDisplay) {
               console.log('stop["stop_id"]:', stop["stop_id"]);
               console.log('stop["arrival_time"]:', stop["arrival_time"]);
-              // let bsmarker = L.marker(stop[], {icon: icon}).bindTooltip(bsname).on('click', onStopClick).addTo(map);
             }
             if (stop['stop_id'] == cstopId) {
               stopDisplay = true;
             }
           }
-          // getTimetable(stop[0]);
         }else{
           map.removeLayer(trip[1]);
         }
